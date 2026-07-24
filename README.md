@@ -1,7 +1,5 @@
 # Polza Agency — тестовое (Вайбкодер-аутричер)
 
-Скрипт персонализации, база, цепочка писем, Task4.
-
 ## Запуск
 
 ```bash
@@ -20,9 +18,5 @@ python personalize.py -i data/task4_input.csv -o data/task4_out.xlsx --strict
 | `data/task4_input.csv` | 15 компаний из задачи 4 |
 | `email_sequence.md` | Цепочка из 3 писем |
 | `task5_vibe_stack.md` | Вайбкод-стек (задача 5) |
-| `METHODOLOGY.md` | Ход работы |
 | `TASK4_NOTES.md` | Разбор ловушек в задаче 4 |
 
-## Google Sheet
-
-Файл → Импорт → `data/Polza_Test_Submission.xlsx` → доступ по ссылке.
