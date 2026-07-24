@@ -1,34 +1,28 @@
 # Polza Agency — тестовое (Вайбкодер-аутричер)
 
-**Репозиторий:** https://github.com/SuperSlayQueen/polza-vibecoder-outreach-test
+Скрипт персонализации, база, цепочка писем, Task4.
 
-Скрипт персонализации + база 58 РФ B2B (MX ok) + цепочка + Task4 с разбором ловушек.
-
-## Скрипт
+## Запуск
 
 ```bash
 pip install -r requirements.txt
-python personalize.py -i data/companies_hardened.csv -o data/out.xlsx
-python personalize.py -i data/task4_input.csv -o data/task4.xlsx --strict
+python personalize.py -i data/companies.csv -o data/out.xlsx
+python personalize.py -i data/task4_input.csv -o data/task4_out.xlsx --strict
 ```
 
-Файл: [`personalize.py`](./personalize.py)
+## Состав
 
-## Таблица для сдачи
+| Файл | Назначение |
+|------|------------|
+| `personalize.py` | Скрипт персонализации (задачи 2 и 4) |
+| `data/Polza_Test_Submission.xlsx` | Итоговая таблица: База, Task4, Письма |
+| `data/companies.csv` | Входная база для прогона скрипта |
+| `data/task4_input.csv` | 15 компаний из задачи 4 |
+| `email_sequence.md` | Цепочка из 3 писем |
+| `task5_vibe_stack.md` | Вайбкод-стек (задача 5) |
+| `METHODOLOGY.md` | Ход работы |
+| `TASK4_NOTES.md` | Разбор ловушек в задаче 4 |
 
-[`data/Polza_Test_Submission.xlsx`](./data/Polza_Test_Submission.xlsx)  
-Листы: `База` · `Task4` · `Письма` · `Цепочка` · `Методология` · `Task4_разбор`
+## Google Sheet
 
-### Google Sheet (обязательно по заданию)
-
-1. Открой https://sheets.new  
-2. **Файл → Импорт → Загрузка** → `Polza_Test_Submission.xlsx`  
-3. «Заменить таблицу» → Импорт  
-4. Доступ: «Все, у кого есть ссылка» → Читатель  
-5. Ссылку вставь в ответ рекрутеру  
-
-Или запусти `OPEN_GOOGLE_SHEETS.bat` в корне репозитория.
-
-## Задача 5
-
-[`task5_vibe_stack.md`](./task5_vibe_stack.md)
+Файл → Импорт → `data/Polza_Test_Submission.xlsx` → доступ по ссылке.

@@ -1,4 +1,3 @@
-node_modules/
 __pycache__/
 *.pyc
 .venv/
@@ -9,4 +8,23 @@ venv/
 Thumbs.db
 data/~$*
 .cursor/
-*.xlsx.bak
+
+# промежуточные прогоны — не для сдачи
+data/companies_seed.csv
+data/companies_verified.csv
+data/companies_hardened.csv
+data/polza_outreach_base.xlsx
+data/polza_base_final.csv
+data/task4_demo_*.csv
+data/task4_demo_*.xlsx
+data/task4_personalized.xlsx
+data/task4_final.xlsx
+build_*.py
+finalize_base.py
+harden_base.py
+rebuild_clean.py
+verify_emails.py
+OPEN_GOOGLE_SHEETS.bat
+SUBMIT.md
+task.md
+audit_*.py
